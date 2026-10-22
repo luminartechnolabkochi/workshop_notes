@@ -41,11 +41,19 @@ class FeedBack(models.Model):
 
     created_date = models.DateTimeField(auto_now_add=True)
 
+```
 
 
+### command for creating query file
 
+```
+cmd> python manage.py makemigrations
+```
 
+### command for apply migrations
 
+```
 
+cmd>python manage.py migrate
 
 ```
