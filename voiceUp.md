@@ -80,3 +80,27 @@ class FeedBackView(View):
         feedbacks = Feedback.objects.all()
         return render(request,'feedback.html', {'feedbacks': feedbacks})
 ```
+
+
+#### my_app > templates > feedback.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+{% for feedback in feedbacks %}
+----------------------------
+     <h3>{{feedback.name}}</h3>
+     <h4>{{feedback.feed_back_text}}</h4>
+     ---------------------
+{% endfor %}
+
+</body>
+</html>
+```
