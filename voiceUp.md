@@ -72,7 +72,7 @@ cmd>python manage.py migrate
 ```
 from django.shortcuts import render
 from .models import FeedBack
-
+from django.views.generic import View
 
 # Create your views here.
 class FeedBackView(View):
