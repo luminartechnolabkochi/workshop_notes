@@ -44,13 +44,13 @@ class FeedBack(models.Model):
 ```
 
 
-### command for creating query file
+### command for creating query file (convert model in to sql query file)
 
 ```
 cmd> python manage.py makemigrations
 ```
 
-### command for apply migrations
+### command for apply migrations (execute qury file)
 
 ```
 
