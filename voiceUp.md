@@ -57,3 +57,10 @@ cmd> python manage.py makemigrations
 cmd>python manage.py migrate
 
 ```
+
+### command for creating django admin
+
+```
+ python manage.py createsuperuser
+
+```
